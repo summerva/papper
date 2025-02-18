@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/output.css">
+</head>
+<!-- везде пишу grid container, чтобы фон был на всю ширину, если прописать grid в body и в родительском блоке писать realtive bg, будет ли на всб ширину -->
+<body class="relative roboto">
+    <header class="relative w-full grid-container items-center bg-white border-b border-[#DDDDDD]">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-1 my-7">
+                <div class="rounded-full border border-[#333333] w-[17px] h-[17px]"></div>
+                <p class="ubuntu-light text-xl text-center text-[#333333]">simple</p>
+                <div class="rounded-full border border-[#333333] w-[32px] h-[17px]"></div>
+                <div class="rounded-full border border-[#333333] w-[17px] h-[17px]"></div>
+            </div>
+            <div class="flex gap-15 items-center text-center my-7">
+                <p class="text-xl text-[#4C5866]">Продукция</p>
+                <p class="text-xl text-[#4C5866]">Материалы</p>
+                <p class="text-xl text-[#4C5866]">О нас</p>
+                <p class="text-xl text-[#4C5866]">Контакты</p>
+                <div class="gap-7 flex">
+                    <img src="/img/header/search.png" alt="">
+                    <img src="/img/header/log-in.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="relative grid-container bg-white">
+            <div class="flex justify-between">
+                <div class="flex flex-col gap-8 mt-32 max-w-[444px]">
+                    <p class="text-[#4C5866] text-6xl">Простые вещи. Из бумаги</p>
+                    <p class="text-[#85859B] text-lg">Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками. </p>
+                    <button class="border border-[#7875FE] text-[#7875FE] w-fit px-23 py-5 text-xl hover:bg-[#7875FE] hover:text-white transition-all duration-300">Каталог</button>
+                </div>
+                <!-- обрезанная картинка взята по frame -->
+                <div class="mt-15">
+                    <img class="z-0" src="/img/main/layer.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- как сделать линию сверху блока -->
+        <div class="relative grid-container bg-[#EBEBEB]">
+            <div class="flex flex-col mt-22">
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="flex gap-8 items-center">
+                        <hr class="h-px w-full border-[#C0C0C0] border-1 mt-4">
+                        <img class="mt-5" src="/img/main/v1.png" alt="">
+                        <div class="flex flex-col text-center">
+                            <h1 class="text-lg font-medium text-[#666666]">V.1</h1>
+                            <p class="text-lg text-[#85859B]">Результат вашего обучения</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 items-center">
+                        <hr class="h-px w-full border-[#C0C0C0] border-1 mt-4">
+                        <img class="mt-5" src="/img/main/v2.png" alt="">
+                        <div class="flex flex-col text-center">
+                            <h1 class="text-lg font-medium text-[#666666]">V.2</h1>
+                            <p class="text-lg text-[#85859B]">Результат вашего обучения</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8 items-center">
+                        <hr class="h-px w-full border-[#C0C0C0] border-1 mt-4">
+                        <img class="mt-5" src="/img/main/v3.png" alt="">
+                        <div class="flex flex-col text-center">
+                            <h1 class="text-lg font-medium text-[#666666]">V.3</h1>
+                            <p class="text-lg text-[#85859B]">Результат вашего обучения</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex mt-22">
+                <img src="/img/main/folder.png" alt="">
+                <div class="flex flex-col gap-5 place-content-center">
+                    <h1 class="text-5xl text-[#666666]">Максимальная белизна</h1>
+                    <p class="text-lg text-[#85859B]">Для повышения белизны, гладкости и мягкости в состав бумажной массы вводят белые минеральные вещества: мел, тальк, каолин и др. Эта операция называется наполнением.
+                    Отлив бумажного листа осуществляют на бумагоделательной машине, важнейшей частью которой является непрерывно движущаяся (как транспортер) металлическая или капроновая сетка.</p>
+                </div>
+            </div>
+        </div>
+        <!-- как сделать стрелочку в подробнее -->
+        <div class="relative grid-container bg-white">
+            <div class="flex my-22">
+                <div class="grid grid-cols-4 gap-8">
+                    <div class="flex flex-col gap-5">
+                        <img src="/img/main/packaging.png" alt="">
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-3xl text-[#666666]">Упаковка</h1>
+                            <p class="text-sm text-[#B5B5BD]">Тираж: от 50 штук</p>
+                            <p class="text-lg text-[#85859B]">Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.</p>
+                        </div>
+                        <button class="text-start text-xl text-[#7875FE] mt-auto hover:text-[#4946B4] transition-all duration-300">Подробнее -</button>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <img src="/img/main/bags.png" alt="">
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-3xl text-[#666666]">Упаковка</h1>
+                            <p class="text-sm text-[#B5B5BD]">Тираж: от 200 штук</p>
+                            <p class="text-lg text-[#85859B]">С прямоугольным дном. От 10 см до 60 см по высоте. Материалы: картон, крафт-бумага. Различные расцветки и дизайн.</p>
+                        </div>
+                        <button class="text-start text-xl text-[#7875FE] mt-auto hover:text-[#4946B4] transition-all duration-300">Подробнее -</button>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <img src="/img/main/cases.png" alt="">
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-3xl text-[#666666]">Упаковка</h1>
+                            <p class="text-sm text-[#B5B5BD]">Тираж: от 30 штук</p>
+                            <p class="text-lg text-[#85859B]">Подойдет для документов и других бумаг. Различные расцветки, размеры и плотность. Материал: прессованная бумага.</p>
+                        </div>
+                        <button class="text-start text-xl text-[#7875FE] mt-auto hover:text-[#4946B4] transition-all duration-300">Подробнее -</button>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <img src="/img/main/other.png" alt="">
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-3xl text-[#666666]">Упаковка</h1>
+                            <p class="text-sm text-[#B5B5BD]">Тираж: от 100 штук</p>
+                            <p class="text-lg text-[#85859B]">Нестандартные упаковки, кейсы и другие изделия различных размеров и конфигураций. Изготовим в кратчайшие сроки.</p>
+                        </div>
+                        <button class="text-start text-xl text-[#7875FE] mt-auto hover:text-[#4946B4] transition-all duration-300">Подробнее -</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative grid-container bg-[#EBEBEB]">
+            <div class="flex my-22 gap-8">
+                <img src="/img/main/han.png" alt="">
+                <img src="/img/main/can.png" alt="">
+                <img src="/img/main/roy.png" alt="">
+                <img src="/img/main/fab.png" alt="">
+            </div>
+        </div>
+        <div class="relative grid-container bg-white">
+            <div class="flex mt-22 justify-between">
+                <div class="flex flex-col max-w-[350px]">
+                    <h1 class="text-[40px] text-[#666666]">Simple скетчбук</h1>
+                    <p class="text-lg text-[#85859B]">80 листов, твердая обложка, бумага  Fabriano 200 г/м2. Подойдет и для графики и для акварели. Для самых смелых творческих замыслов!</p>
+                    <button class="mt-8 border border-[#7875FE] text-[#7875FE] w-fit px-23 py-5 text-xl hover:bg-[#7875FE] hover:text-white transition-all duration-300">Купить</button>
+                </div>
+                <img class="items-end" src="/img/main/pic.png" alt="">
+            </div>
+        </div>
+    </main>
+    <footer class="relative bg-[#4C5866] grid-container">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-1 my-7">
+                <div class="rounded-full border border-white w-[17px] h-[17px]"></div>
+                <p class="ubuntu-light text-xl text-center text-white">simple</p>
+                <div class="rounded-full border border-white w-[32px] h-[17px]"></div>
+                <div class="rounded-full border border-white w-[17px] h-[17px]"></div>
+            </div>
+            <!-- как поменять цвет svg картинки -->
+            <div class="flex gap-8 items-center text-center my-7">
+                <button class="hover:bg-[#7875FE]">
+                    <img class="fill-current" src="/img/footer/instagram.svg" alt="">
+                </button>
+                <button class="hover:fill-[#7875FE]">
+                    <img class="fill-current" src="/img/footer/twitter.svg" alt="">
+                </button>
+                <button class="hover:fill-[#7875FE]">
+                    <img class="fill-current" src="/img/footer/instagram.svg" alt="">
+                </button>
+                <button class="hover:fill-[#7875FE]">
+                    <img class="fill-current" src="/img/footer/youtube.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center">
+        <p class="text-sm uppercase">Simple ® 2021</p>
+    </div>
+</body>
+</html>
